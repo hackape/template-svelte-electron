@@ -1,0 +1,32 @@
+{
+  "devDependencies": {
+    "@types/node": "12.12.21",
+    "@types/webpack": "4.41.17",
+    "electron": "9.0.2",
+    "electron-builder": "22.7.0",
+    "electron-webpack": "2.8.2",
+    "electron-webpack-ts": "4.0.1",
+    "node-sass": "4.14.1",
+    "svelte": "3.23.0",
+    "svelte-loader": "2.13.6",
+    "svelte-preprocess": "3.7.4",
+    "typescript": "3.9.3",
+    "webpack": "4.43.0"
+  },
+  "dependencies": {
+    "source-map-support": "0.5.19"
+  },
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder"
+  },
+  "electronWebpack": {
+    "main": {
+      "webpackConfig": "webpack.main.config.js"
+    },
+    "renderer": {
+      "webpackConfig": "webpack.renderer.config.js"
+    }
+  }
+}
