@@ -2,7 +2,7 @@
   "devDependencies": {
     "@types/node": "12.12.21",
     "@types/webpack": "4.41.17",
-    "electron": "10.1.3",
+    "electron": "22.3.25",
     "electron-builder": "22.7.0",
     "electron-webpack": "2.8.2",
     "electron-webpack-ts": "4.0.1",
